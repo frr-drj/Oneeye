@@ -90,5 +90,19 @@
  <iframe width="560" height="315" src="https://www.youtube.com/embed/iwXaokBMd8E?rel=0" title="YouTube video"allowfullscreen ></iframe>
 </div>
 
+    <script>
+        function checkForDesktopMode() {
+            if (window.innerWidth > 768) { // You can adjust this value to suit your needs
+                document.body.innerHTML = "<h1>Desktop Mode is Unavailable</h1>";
+            }
+        }
+
+        // Call the function on page load
+        checkForDesktopMode();
+
+        // You can also attach this function to a window resize event to continuously check
+        // for changes in screen size.
+        window.addEventListener("resize", checkForDesktopMode);
+    </script>
     </body>
 </html>
